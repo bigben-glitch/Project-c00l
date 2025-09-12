@@ -1,0 +1,30 @@
+body {
+    background:linear-gradient(to right , red, blue); 
+    
+}
+div {
+    text-align: center;
+    color: yellow;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    
+}
+h1 {
+    text-shadow: 2px 2px 4px #000000;
+}
+li {
+    list-style: none;
+}
+.image-row {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
