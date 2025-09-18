@@ -1,0 +1,75 @@
+body{
+    background-image: url(Barcelonateam.png); 
+}
+header{
+    display: block;
+    padding: 0;
+    background: linear-gradient(to right , red, blue, red);
+    box-shadow:5px, 5px black;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 20px 0;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    text-shadow: 2px 2px black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: linear-gradient(135deg, #1a237e 80%, #d32f2f 100%);
+    min-width: 180px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    list-style: none;
+    padding: 8px 0;
+    margin: 0;
+    border-radius: 10px;
+    border: 2px solid #ffd600;
+    transform: translateY(10px);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+.dropdown-content li a {
+    color: #ffd600;
+    padding: 12px 24px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    text-transform: none;
+    border-radius: 6px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.dropdown-content li a:hover {
+    background: linear-gradient(90deg, #d32f2f 60%, #1976d2 100%);
+    color: #fff;
+}
+div{
+    text-align: center;
+    color: yellow;
+    font-size: 48px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 100px;
+    box-shadow: 3px, 4px, 4px;
+}
+a{
+    text-decoration: none;
+    color: yellow;
+}
+
+img {
+    height: 10vh;
+    display: block;
+    margin: -10vh auto;
+}
+a:hover {
+    cursor: default;
+}
