@@ -9,16 +9,16 @@
 <body>
 <header><h1>What happened last season</h1></header>
 <div class="calendar-row">
-    <img src="img/aug.png" alt="August" class="calender" data-text="August: The season started off with 4 games in august first game again">
-    <img src="img/sep.png" alt="September" class="calender" data-text="September: Early wins set the tone, but some tough matches tested the squad.">
-    <img src="img/oct.png" alt="October" class="calender" data-text="October: Injuries started to affect the team, but young players stepped up.">
-    <img src="img/nov.png" alt="November" class="calender" data-text="November: A dramatic comeback in the derby thrilled fans.">
-    <img src="img/dec.png" alt="December" class="calender" data-text="December: The team finished the year strong, climbing the league table.">
-    <img src="img/jan.png" alt="January" class="calender" data-text="January: Winter transfers brought fresh energy and new tactics.">
-    <img src="img/feb.png" alt="February" class="calender" data-text="February: Champions League nights returned, with memorable performances.">
-    <img src="img/mar.png" alt="March" class="calender" data-text="March: The squad faced tough fixtures, but morale remained high.">
-    <img src="img/apr.png" alt="April" class="calender" data-text="April: Key victories put the team in contention for the title.">
-    <img src="img/may.png" alt="May" class="calender" data-text="May: The season ended with celebrations and a look to the future.">
+    <img src="img/aug.png" alt="August" class="calender" data-text="August: The season started off with 4 games in August. First game against Valencia ended 2-1 to Barcelona. The second game against Athletic Bilbao ended 2-1 to Barca, same with the Rayo Vallecano match. But in dominating fashion, Barca thrashed Real Valladolid 7-0, sparking the beginning of a new Barca prime.">
+    <img src="img/sep.png" alt="September" class="calender" data-text="September: Barca beat Girona 4-1 but then came the first Champions League game, a 2-1 loss to Monaco. This defeat didn’t stop Barca as they dominated Villarreal 5-1 and beat Getafe 1-0. Squad rotation led to a 4-2 loss to Osasuna, but spirits remained high.">
+    <img src="img/oct.png" alt="October" class="calender" data-text='October: The world saw how good Barcelona was. They started by beating Young Boys 5-0 in the Champions League, then Alaves 3-0 and Sevilla 5-1 in La Liga. A 4-1 win over Bayern Munich (with a Raphinha hattrick) and a 4-0 El Clasico win over Real Madrid capped a perfect month.'>
+    <img src="img/nov.png" alt="November" class="calender" data-text="November: Barca won 3-1 against Espanyol and beat Crvena Zvezda 5-2 in the Champions League. A loss to Real Sociedad and an injury to Lamine Yamal led to a 2-2 draw with Celta Vigo. Barca bounced back to beat Brest 3-0, but lost 2-1 to Las Palmas.">
+    <img src="img/dec.png" alt="December" class="calender" data-text='December: Barca won against Mallorca 5-1 and drew 2-2 with Real Betis. They edged Dortmund 3-2 in Europe, but suffered back-to-back 2-1 losses to Leganes and Atletico Madrid. The team regrouped for the winter break.'>
+    <img src="img/jan.png" alt="January" class="calender" data-text="January: Copa del Rey action began with a 4-0 win over Barbastro. Barca also beat Athletic Club 2-1 in the Copa de España. New signings started to settle in, and the team looked refreshed for the second half of the season.">
+    <img src="img/feb.png" alt="February" class="calender" data-text='February: Champions League nights returned, with memorable performances and a dramatic late winner against Monaco. In La Liga, Barca kept pace with the leaders, winning crucial away games.'>
+    <img src="img/mar.png" alt="March" class="calender" data-text='March: The squad faced tough fixtures, including a hard-fought win with Real Madrid and a narrow win over Sevilla. Injuries tested the squad depth, but young players stepped up.'>
+    <img src="img/apr.png" alt="April" class="calender" data-text='April: Key victories over Atletico and Villarreal put Barca in contention for the title. The Champions League run ended in the semifinals, but the team earned respect for their fighting spirit.'>
+    <img src="img/may.png" alt="May" class="calender" data-text='May: The season ended with celebrations as Barca secured first place in La Liga and lifted the Copa del Rey and the super copa de espanja. Fans looked forward to a bright future with a talented young squad and renewed hope.'>
 </div>
 <div id="popup-text" class="popup-text"></div>
 
@@ -30,7 +30,7 @@ function showPopup(text) {
     popup.innerHTML = `<button class="popup-close" onclick="hidePopup()">&times;</button>${text}`;
     popup.classList.add('show');
     clearTimeout(window.popupTimeout);
-    window.popupTimeout = setTimeout(hidePopup, 3500);
+    window.popupTimeout = setTimeout(hidePopup, 100000);
 }
 function hidePopup() {
     popup.classList.remove('show');
