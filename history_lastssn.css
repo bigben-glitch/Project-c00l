@@ -1,8 +1,9 @@
 body {
-    background: linear-gradient(to right, red, blue)
+    background: linear-gradient(to right, red, blue);
+    min-height: 100vh;
 }
 
-header{
+header {
     display: block;
     padding: 0;
     background: linear-gradient(to right , red, blue, red);
@@ -13,6 +14,52 @@ h1 {
     font-size: 40px;
     font-family: 'Courier New', Courier, monospace;
     margin: auto;
-
+}
+.calendar-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    margin: 40px 0 60px 0;
+}
+.calender {
+    width: 200x;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 2px solid #ffd600;
+    background: #fff;
+}
+.calender:hover {
+    transform: scale(1.12) rotate(-3deg);
+    box-shadow: 0 4px 24px #ffd60088;
+    border-color: #fff;
+}
+.popup-text {
+    position: fixed;
+    left: 50%;
+    top: 18%;
+    transform: translateX(-50%);
+    min-width: 220px;
+    max-width: 80vw;
+    background: linear-gradient(90deg, #1a237e 70%, #d32f2f 100%);
+    color: #ffd600;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3rem;
+    padding: 18px 28px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    z-index: 100;
+    text-align: center;
+}
+.popup-text.show {
+    opacity: 1;
+    pointer-events: auto;
 }
 

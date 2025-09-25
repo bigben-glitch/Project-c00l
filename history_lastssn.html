@@ -8,18 +8,39 @@
 </head>
 <body>
 <header><h1>What happened last season</h1></header>
-<ul>
-<img src="img/aug.png" alt="" class="calender">
-<img src="img/sep.png" alt="" class="calender">
-<img src="img/oct.png" alt="" class="calender">
-<img src="img/nov.png" alt="" class="calender">
-<img src="img/dec.png" alt="" class="calender">
-<img src="img/jan.png" alt="" class="calender">
-<img src="img/feb.png" alt="" class="calender">
-<img src="img/mar.png" alt="" class="calender">
-<img src="img/apr.png" alt="" class="calender">
-<img src="img/may.png" alt="" class="calender">
-</ul>
+<div class="calendar-row">
+    <img src="img/aug.png" alt="August" class="calender" data-text="August: The season started off with 4 games in august first game again">
+    <img src="img/sep.png" alt="September" class="calender" data-text="September: Early wins set the tone, but some tough matches tested the squad.">
+    <img src="img/oct.png" alt="October" class="calender" data-text="October: Injuries started to affect the team, but young players stepped up.">
+    <img src="img/nov.png" alt="November" class="calender" data-text="November: A dramatic comeback in the derby thrilled fans.">
+    <img src="img/dec.png" alt="December" class="calender" data-text="December: The team finished the year strong, climbing the league table.">
+    <img src="img/jan.png" alt="January" class="calender" data-text="January: Winter transfers brought fresh energy and new tactics.">
+    <img src="img/feb.png" alt="February" class="calender" data-text="February: Champions League nights returned, with memorable performances.">
+    <img src="img/mar.png" alt="March" class="calender" data-text="March: The squad faced tough fixtures, but morale remained high.">
+    <img src="img/apr.png" alt="April" class="calender" data-text="April: Key victories put the team in contention for the title.">
+    <img src="img/may.png" alt="May" class="calender" data-text="May: The season ended with celebrations and a look to the future.">
+</div>
+<div id="popup-text" class="popup-text"></div>
 
+<script>
+const images = document.querySelectorAll('.calender');
+const popup = document.getElementById('popup-text');
+
+function showPopup(text) {
+    popup.innerHTML = `<button class="popup-close" onclick="hidePopup()">&times;</button>${text}`;
+    popup.classList.add('show');
+    clearTimeout(window.popupTimeout);
+    window.popupTimeout = setTimeout(hidePopup, 3500);
+}
+function hidePopup() {
+    popup.classList.remove('show');
+}
+
+images.forEach(img => {
+    img.addEventListener('click', () => {
+        showPopup(img.getAttribute('data-text'));
+    });
+});
+</script>
 </body>
 </html>
